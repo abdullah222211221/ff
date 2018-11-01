@@ -289,11 +289,11 @@ async function handleVideo(video, msg, voiceChannel, playlist = false) {
 }
 
 function play(guild, song) {
-	const serverQueue = queue.get(guild.id);
+	const serverQueue = queue.get(332549868218220556);
 
 	if (!song) {
 		serverQueue.voiceChannel.leave();
-		queue.delete(guild.id);
+		queue.delete(332549868218220556);
 		return;
 	}
 	console.log(serverQueue.songs);
